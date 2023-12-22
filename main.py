@@ -363,6 +363,7 @@ def find_duplicates(string):
         # never seen the character before
         else:
             duplicates[char]=1
+    # remove all characters that don't have duplicates
     for key in duplicates:
         if duplicates[key] < 2:
             del duplicates[key]
